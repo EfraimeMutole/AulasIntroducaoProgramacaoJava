@@ -1,4 +1,4 @@
-package Excercicio1;
+package Excercicio001_Entrada_E_Visualizacao_De_Dados;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
