@@ -1,4 +1,4 @@
-package Exercicio002_Classe_Vs_Objetos;
+package Basico.Exercicio002_Classe_Vs_Objetos;
 
 public class Menu {
     public Menu(){}

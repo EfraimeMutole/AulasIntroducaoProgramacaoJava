@@ -1,4 +1,4 @@
-package Excercicio001_Entrada_E_Visualizacao_De_Dados;
+package  Basico.Excercicio001_Entrada_E_Visualizacao_De_Dados;
 
 public class Visualizacoes {
     

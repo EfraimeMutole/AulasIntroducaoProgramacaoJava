@@ -1,4 +1,4 @@
-package Exercicio002_Classe_Vs_Objetos;
+package Basico.Exercicio002_Classe_Vs_Objetos;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
