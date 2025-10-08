@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Executavel",
+            "request": "launch",
+            "mainClass": "Excercicio001_Entrada_E_Visualizacao_De_Dados.Executavel",
+            "projectName": "AulasIntroducaoProgramacaoJava_92b12f2b"
+        },
+        {
+            "type": "java",
+            "name": "Executavel(1)",
+            "request": "launch",
+            "mainClass": "Exercicio002_Classe_Vs_Objetos.Executavel",
+            "projectName": "AulasIntroducaoProgramacaoJava_92b12f2b"
+        },
+        {
+            "type": "java",
+            "name": "OlaMundo",
+            "request": "launch",
+            "mainClass": "OlaMundo",
+            "projectName": "AulasIntroducaoProgramacaoJava_92b12f2b"
+        }
+    ]
+}
