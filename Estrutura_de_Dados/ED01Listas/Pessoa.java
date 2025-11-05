@@ -1,12 +1,17 @@
-package Estrutura_de_Dados.Arrays;
+package Estrutura_de_Dados.ED01Listas;
 
 public class Pessoa {
+    
     private String nome;
     private int idade;
     private String email;
     private String telefone;
     private String endereco;
 
+    public Pessoa(){
+
+    }
+    
     public Pessoa(String nome, int idade, String email, String telefone, String endereco){
         this.nome = nome;
         this.idade = idade;
@@ -30,5 +35,14 @@ public class Pessoa {
     public String getEndereco() { return endereco;}
     public void setEndereco(String endereco) { this.endereco = endereco; }
 
-   
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "Nome      : " + nome  +  "\n"  +
+                "Idade     : " + idade +  "\n"  +
+                "E-mail    : " + email +  "\n"  +
+                "Telefone  : " + telefone +  "\n"+
+                "Endereco  : " + endereco +  "\n"+
+                '}';
+    }
 }

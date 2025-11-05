@@ -1,5 +1,4 @@
-
-package Estrutura_de_Dados.Arrays;
+package Estrutura_de_Dados.ED01Listas;
 
 public class Aluno extends Pessoa {
 
@@ -10,6 +9,10 @@ public class Aluno extends Pessoa {
     private String situacao;
     
 
+    public Aluno(){
+
+    }
+    
     public Aluno(String nome, int idade, String email, String telefone, String endereco, 
     String universidade, String curso, String matricula, double nota, String situacao) {
         
