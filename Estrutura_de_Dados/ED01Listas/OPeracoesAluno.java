@@ -1,50 +1,62 @@
 package Estrutura_de_Dados.ED01Listas;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
-public class OPeracoesAluno {
-    
-    public Aluno[] alunos = new Aluno[100];
+public class OPeracoesAluno implements InterfaceRepositorioAluno {
 
-    public void adicionarQualquer(Aluno aluno){
-    
+    public OPeracoesAluno(){}
+ 
+    private List<Aluno> listaAlunos = new ArrayList<>();
+
+    @Override
+    public void adicionarQualquerAluno(Aluno aluno){
+        listaAlunos.add(aluno);
     }
 
-    public void adicionar(int posicao, Aluno aluno){
-
+    public void adicionarAlunoPosicao(int posicao, Aluno aluno){
+        listaAlunos.add(posicao, aluno);
     }
 
-    public Aluno[] pegar(int posicao){
-        return alunos;
+    public Aluno pegarAluno(int posicao){
+        return listaAlunos.get(posicao);
     }
 
-    public Aluno[] pega(int posicao) {
-        // implementação
-        return alunos;
+    public void removerAluno(int posicao){
+        listaAlunos.remove(posicao);
     }
 
-    public void remove(int posicao) {
-            // implementação
+    public String situacaoAprovado(double nota){
+        if(nota >= 7){
+            return "Aprovado";
+        } else {
+            return "Reprovado";
+        }
     }
 
-    public String situacaoAprovado(Aluno aluno){
-        String situacaoAprovado="";
-           return situacaoAprovado;
-    }
-
-    public boolean contem(Aluno aluno) {
-        // implementação
-        boolean temAluno=false;
-        return temAluno;
+    public boolean existiAluno(Aluno aluno){
+        return listaAlunos.contains(aluno);
     }
         
-    public int tamanho() {
-            // implementação
-            int tamanhoLista=0;
-            return tamanhoLista;
+    public int tamanho(){
+        return listaAlunos.size();
     }
-            
-    public String toString() {
-        return Arrays.toString(alunos);
+          
+    public void visualizar(){
+
+
+        for(int i=0;i<tamanho();i++){
+            System.out.println(listaAlunos.get(i) +"\n");
+        }
+       /* 
+        for(Aluno aluno : listaAlunos){
+            System.out.println(aluno);
+        }*/
     }
+    public String toString(){
+        return Arrays.toString(listaAlunos.toArray());
+    }
+
 }
+    

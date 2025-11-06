@@ -7,7 +7,12 @@ public class MenuLista {
 
     public void menuOpcoes(){
 
-        // Variáveis da pessoa
+      
+
+
+        try {
+
+              // Variáveis da pessoa
         String nome;
         int idade;
         String email;
@@ -24,9 +29,9 @@ public class MenuLista {
         int opcao = 0;
         Validacoes validacoes = new Validacoes();
         OPeracoesAluno operacoesAluno = new OPeracoesAluno();
-        Aluno alunos = new Aluno();
+        //Visualizacoes visualizacoes = new Visualizacoes();
+        //Aluno alunos = new Aluno();
 
-        try {
             do{
 
                 System.out.println("\n----- Menu de Opções -----");
@@ -37,8 +42,8 @@ public class MenuLista {
                 System.out.println("5 - Remover elemento do final da lista");
                 System.out.println("6 - Remover elemento em qualquer lugar da lista");
                 System.out.println("7 - Exibir elementos qualquer da lista");
-                System.out.println("7 - Exibir elementos da lista");
-                System.out.println("8 - Sair");
+                System.out.println("8 - Exibir elementos da lista");
+                System.out.println("9 - Sair");
                 System.out.print("Escolha uma opção: ");
                 
                 opcao = validacoes.validarNumero("");
@@ -55,8 +60,10 @@ public class MenuLista {
                         curso = validacoes.validarString("Insira o curso do aluno:", 5,30);
                         matricula = validacoes.validarString("Insira a matricula do aluno:", 5,15);
                         nota = validacoes.validarNumero("Insira a nota do aluno:");
-                        situacao = operacoesAluno.situacaoAprovado(alunos);
-                        alunos = new Aluno(nome, idade, email, telefone, endereco, universidade, curso, matricula, nota, situacao);
+                        situacao = operacoesAluno.situacaoAprovado(nota);
+                    
+                        Aluno aluno =new Aluno(nome, idade, email, telefone, endereco, universidade, curso, matricula, nota, situacao);
+                        operacoesAluno.adicionarQualquerAluno(aluno);
                         break;
 
                     case 2:
@@ -78,7 +85,8 @@ public class MenuLista {
                         System.out.println("Saindo do menu...");
                         break;
                     case 8:
-                        System.out.println("Saindo do menu...");
+                        operacoesAluno.visualizar();
+                         //visualizacoes.exibirAluno();
                         break;
                     default:
                         System.out.println("Opção inválida. Tente novamente.");

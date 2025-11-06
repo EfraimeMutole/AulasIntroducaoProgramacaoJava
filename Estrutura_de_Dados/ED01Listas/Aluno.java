@@ -41,4 +41,18 @@ public class Aluno extends Pessoa {
     public void setSituacao(String situacao){ this.situacao = situacao;}
 
 
+    public String toString() {
+        return "Aluno{"                             +  "\n"  +
+                "Nome         : " + getNome()       +  "\n"  +
+                "Idade        : " + getIdade()      +  "\n"  +
+                "E-mail       : " + getEmail()      +  "\n"  +
+                "Telefone     : " + getTelefone()   +  "\n"  +
+                "Endereco     : " + getEndereco()   +  "\n"  +
+                "Universidade : " + universidade    +  "\n"  +
+                "Curso        : " + curso           +  "\n"  +
+                "Matricula    : " + matricula       +  "\n"  +
+                "Nota         : " + nota            +  "\n"  +
+                "Situacao     : " + situacao        +  "\n"  +
+                '}';
+    }
 }
