@@ -42,17 +42,17 @@ public class Aluno extends Pessoa {
 
 
     public String toString() {
-        return "Aluno{"                             +  "\n"  +
-                "Nome         : " + getNome()       +  "\n"  +
-                "Idade        : " + getIdade()      +  "\n"  +
-                "E-mail       : " + getEmail()      +  "\n"  +
-                "Telefone     : " + getTelefone()   +  "\n"  +
-                "Endereco     : " + getEndereco()   +  "\n"  +
-                "Universidade : " + universidade    +  "\n"  +
-                "Curso        : " + curso           +  "\n"  +
-                "Matricula    : " + matricula       +  "\n"  +
-                "Nota         : " + nota            +  "\n"  +
-                "Situacao     : " + situacao        +  "\n"  +
+        return "Aluno{"                                  +  "\n"  +
+                "Nome         : " + getNome()            +  "\n"  +
+                "Idade        : " + getIdade()           +  "\n"  +
+                "E-mail       : " + getEmail()           +  "\n"  +
+                "Telefone     : " + getTelefone()        +  "\n"  +
+                "Endereco     : " + getEndereco()        +  "\n"  +
+                "Universidade : " + getUniversidade()    +  "\n"  +
+                "Curso        : " + getCurso()           +  "\n"  +
+                "Matricula    : " + getMatricula()       +  "\n"  +
+                "Nota         : " + getNota()            +  "\n"  +
+                "Situacao     : " + getSituacao()        +  "\n"  +
                 '}';
     }
 }
